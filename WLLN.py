@@ -47,6 +47,9 @@ def drawCDFofWLLN(N, epoch):
         resultList.append(probaltiy);
         zList.append( i / float(N));
 
+    plt.xlabel('z')
+    plt.ylabel('FZn(z)')
+    plt.title('n = ' + str(N))
     plt.step(zList, resultList);
     plt.show();
 
